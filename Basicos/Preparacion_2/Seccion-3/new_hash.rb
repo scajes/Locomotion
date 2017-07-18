@@ -1,0 +1,1 @@
+new_hash = Hash.new(0)
