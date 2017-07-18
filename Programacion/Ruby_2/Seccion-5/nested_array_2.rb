@@ -14,8 +14,8 @@ calif = [{"Nombre"=>"Rodrigo García", "Edad"=>13, "Genero"=>"Masculino", "Grupo
     {"Nombre"=>"Ana Espinosa", "Edad"=>14, "Genero"=>"Femenino", "Grupo"=>"Segundo", "Calificaciones"=>[9, 9, 6, 8, 8]},
     {"Nombre"=>"Pablo Moran", "Edad"=>11, "Genero"=>"Masculino", "Grupo"=>"Segundo", "Calificaciones"=>[7, 8, 9, 9, 8]}]
 
-p calif[0]
-p calif[1].values_at("Nombre", "Calificaciones")
-p calif[2].key("Luis Perez")
-p calif[3].values
-p calif[4].keys
+p calif[0] == {"Nombre"=>"Rodrigo García", "Edad"=>13, "Genero"=>"Masculino", "Grupo"=>"Primero", "Calificaciones"=>[9, 9, 7, 6, 8]}
+p calif[1].values_at("Nombre", "Calificaciones") == ["Fernanda Gonzalez", [6, 9, 8, 6, 8]]
+p calif[2].key("Luis Perez") == "Nombre"
+p calif[3].values == ["Ana Espinosa", 14, "Femenino", "Segundo", [9, 9, 6, 8, 8]]
+p calif[4].keys == ["Nombre", "Edad", "Genero", "Grupo", "Calificaciones"]
