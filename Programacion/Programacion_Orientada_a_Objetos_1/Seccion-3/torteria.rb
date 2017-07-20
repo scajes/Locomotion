@@ -36,16 +36,16 @@ class Torteria
       #p @listo
       if @tiempo == @listo
         #charola_final << "Torta de #{torta}: lista¡"
-        p "Torta de #{torta}: lista¡"
+        p "Torta de #{torta}: lista!"
       elsif @tiempo > @listo
         #charola_final << "Torta de #{torta}: quemada¡¡"
-        p "Torta de #{torta}: quemada¡¡"
+        p "Torta de #{torta}: quemada!!"
       elsif @tiempo > (@listo - 2) && @tiempo < @listo
         #charola_final << "Torta de #{torta}: casi lista¡"
-        p "Torta de #{torta}: casi lista¡"
+        p "Torta de #{torta}: casi lista!"
       else
         #charola_final << "Torta de #{torta}: cruda¡"
-        p "Torta de #{torta}: cruda¡"
+        p "Torta de #{torta}: cruda!"
       end
     end
     #p charola_final
