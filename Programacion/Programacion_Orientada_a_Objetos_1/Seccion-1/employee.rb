@@ -19,7 +19,7 @@ class Employee
     "#{name} <email: #{@email}> acct: #{hide_account}"
   end
 
-  #Metodo para esconder los primeros 5 numeros del num de cuenta
+  #Metodo para esconder los primeros 5 numeros del num de cuenta y de igual manera eliminar el ùltimo guión
   def hide_account
     @deposit_account.gsub(/(\d{3})-(\d{2})/, "*****").tr('-', '')
   end
