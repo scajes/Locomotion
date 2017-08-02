@@ -25,8 +25,8 @@ class TwitterScrapper
       tweets.each do |row|
   	    puts "\n"
         puts "#{row.css('.stream-item-header').css('.account-group').css('.FullNameGroup').css('.fullname').inner_text.strip}"
-    	puts "#{row.css('.stream-item-header').css('.time').css('.tweet-timestamp').css('._timestamp').text} #{row.css('.js-tweet-text-container').text}"
-    	puts "#{row.css('.stream-item-footer').css('.ProfileTweet-actionCountList').css('.ProfileTweet-action--retweet').text.strip} #{row.css('.stream-item-footer').css('.ProfileTweet-actionCountList').css('.ProfileTweet-action--favorite').text.strip}"
+    		puts "#{row.css('.stream-item-header').css('.time').css('.tweet-timestamp').css('._timestamp').text} #{row.css('.js-tweet-text-container').text}"
+    		puts "#{row.css('.stream-item-footer').css('.ProfileTweet-actionCountList').css('.ProfileTweet-action--retweet').text.strip} #{row.css('.stream-item-footer').css('.ProfileTweet-actionCountList').css('.ProfileTweet-action--favorite').text.strip}"
      end
   end
 
